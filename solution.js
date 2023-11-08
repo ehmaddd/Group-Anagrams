@@ -13,3 +13,12 @@ const groupAnagrams = (strs) => {
 
     return Object.values(anagramGroups);
   };
+
+const strs1 = ["eat", "tea", "tan", "ate", "nat", "bat"];
+console.log(groupAnagrams(strs1)); // Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
+
+const strs2 = [""];
+console.log(groupAnagrams(strs2)); // Output: [[""]]
+
+const strs3 = ["a"];
+console.log(groupAnagrams(strs3)); // Output: [["a"]]
