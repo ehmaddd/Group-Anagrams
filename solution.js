@@ -10,4 +10,6 @@ const groupAnagrams = (strs) => {
 
       anagramGroups[sortedStr].push(str);
     }
+
+    return Object.values(anagramGroups);
   };
