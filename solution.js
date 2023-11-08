@@ -7,5 +7,7 @@ const groupAnagrams = (strs) => {
       if (!anagramGroups[sortedStr]) {
         anagramGroups[sortedStr] = [];
       }
+
+      anagramGroups[sortedStr].push(str);
     }
   };
