@@ -3,5 +3,9 @@ const groupAnagrams = (strs) => {
 
     for (const str of strs) {
       const sortedStr = str.split('').sort().join('');
+
+      if (!anagramGroups[sortedStr]) {
+        anagramGroups[sortedStr] = [];
+      }
     }
   };
